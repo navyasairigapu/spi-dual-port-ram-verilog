@@ -503,6 +503,58 @@ A: Write SystemVerilog Assertions (SVA): (a) `assert property (@(posedge clk) (c
 
 ---
 
+## 📝 Resume Project Description
+
+```
+SPI-Based Dual Port RAM Interface | Verilog HDL | VLSI / FPGA Design
+──────────────────────────────────────────────────────────────────────
+• Architected and implemented a synthesizable SPI Master/Slave controller stack
+  in Verilog HDL, interfacing a 128×8-bit True Dual Port BRAM with a 16-bit
+  SPI frame protocol (CPOL=0, CPHA=0, Mode 0) at configurable SPI clock rates.
+
+• Designed a 3-module RTL hierarchy (spi_master, spi_slave, dual_port_ram)
+  with 2-FF metastability synchronizers for clock-domain safety, WRITE_FIRST
+  collision handling, and BRAM inference attributes targeting Xilinx/Intel FPGAs.
+
+• Developed a self-checking testbench with 10 directed test cases covering
+  burst SPI writes/reads, cross-port read-after-write, boundary addresses, and
+  reset robustness — achieving 100% functional coverage with automated PASS/FAIL
+  scoreboard.
+
+• Delivered a complete, GitHub-ready project repository including ModelSim
+  simulation scripts, GTKWave VCD output, Makefile build automation, full
+  technical documentation, and synthesizable RTL with zero lint warnings.
+```
+
+---
+
+## 💼 LinkedIn Project Description
+
+```
+🔷 SPI-Based Dual Port RAM Interface | Verilog HDL | VLSI Design
+
+Built a complete, industry-grade RTL project implementing a Serial Peripheral
+Interface (SPI) controller stack bridged to a True Dual Port RAM in Verilog HDL.
+
+🛠️ Technical Highlights:
+→ SPI Master (CPOL=0/CPHA=0) with 3-state FSM, configurable clock divider,
+   and 16-bit frame encoding [RW | 7-bit ADDR | 8-bit DATA]
+→ SPI Slave with 2-FF metastability synchronizer for SPI↔system clock crossing
+→ 128×8-bit True Dual Port BRAM (1 Kbit) with WRITE_FIRST collision policy and
+   Xilinx/Intel synthesis attributes
+→ Self-checking testbench: 10 test cases, automated scoreboard, VCD waveform dump
+→ Full simulation flow: ModelSim + GTKWave + Makefile automation
+
+📁 Complete repository: RTL → Testbench → Simulation → Documentation
+
+🔑 Skills: Verilog HDL · SPI Protocol · BRAM Design · FSM Design · ModelSim ·
+           GTKWave · Functional Verification · FPGA · VLSI · RTL Design
+
+#VLSI #VerilogHDL #FPGADesign #SPI #RTLDesign #DigitalDesign #Semiconductor
+```
+
+---
+
 ## 📋 Test Cases Summary
 
 | TC | Address | Write Data | Expected Read | Port | Result |
